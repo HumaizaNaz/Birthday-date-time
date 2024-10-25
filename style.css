@@ -1,0 +1,149 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-image: url('https://unsplash.com/photos/selective-focus-photography-of-assorted-color-balloons-Hli3R6LKibo');
+  background-size: cover;
+  background-position: center;
+  font-size: 120%;
+  color: #000000;
+}
+
+.glass {
+  padding: 50px;
+  background: linear-gradient(135deg, rgba(210, 117, 86, 0.3), rgba(212, 100, 56, 0.5));
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  transition: transform 0.3s;
+}
+
+.glass:hover {
+  transform: scale(1.05);
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+small {
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#demo {
+  font-size: larger;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+  word-spacing: 5px;
+  font-size: 38px;
+}
+
+button {
+  background-color: #f39c12;
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 12px 20px;
+  font-weight: 600;
+  margin: 10px 0;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #d8d5d5;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+input:focus {
+  background-color: #ffffff;
+  color: black;
+}
+
+::-webkit-calendar-picker-indicator {
+  font-size: large;
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .glass {
+    padding: 20px;
+    max-width: 100%;
+  }
+  
+  .box {
+    width: 40px;
+    height: 40px;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+  #demo {
+    font-size: 28px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+}
